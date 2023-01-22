@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CountDown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@400;700&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img class="topImg" src="./assets/top.svg" alt="topImage" />
+    <h1>READY TO LAUNCH IN...</h1>
+    <div id="container">
+      <div class="children">
+        <div class="countDown">
+          <div id="headers">
+            <p>Dias</p>
+            <p>Horas</p>
+            <p>Minutos</p>
+            <p>Segundos</p>
+          </div>
+          <p id="demo"></p>
+          <div class="subscribe">
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+          </div>
+          <div class="divButton">
+            <input
+              type="submit"
+              id="subscribeButton"
+              value="Inscreva-se"
+              data-toggle="modal"
+              data-target="#modal-mensagem"
+            />
+          </div>
+        </div>
+        <img class="rocket" src="./assets/rocket.svg" alt="Rocket" />
+      </div>
+    </div>
+    <img class="bottomImg" src="./assets/bottom.svg" alt="bottomImage" />
+    <div class="modal fade" id="modal-mensagem">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>×</span>
+            </button>
+            <h4 class="modal-title">Cadastro</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <label for="floatingInput">Digite seu nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Nome"
+              />
+            </div>
+            <div class="form-floating">
+              <label for="floatingEmail">Digite seu email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="floatingEmail"
+                placeholder="name@example.com"
+              />
+            </div>
+            <br />
+            <div class="divButton">
+              <input type="submit" id="subscribeButton" value="Enviar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn-mensagem").click(function () {
+          $("#modal-mensagem").modal()
+        })
+      })
+    </script>
+  </body>
+</html>
