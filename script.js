@@ -19,3 +19,10 @@ var x = setInterval(function () {
     document.getElementById("demo").innerHTML = "EXPIRED"
   }
 }, 1000)
+
+function clearText() {
+  document.getElementById("floatingInput").value = ""
+  document.getElementById("floatingEmail").value = ""
+}
+
+sendButton.addEventListener("click", clearText)
