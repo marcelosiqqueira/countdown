@@ -72,6 +72,23 @@ body {
   color: white;
 }
 
+#sendButton {
+  font-family: "Poppins";
+  font-style: normal;
+  background-color: #6c63ff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0px solid #6c63ff;
+  color: white;
+  width: 160px;
+}
+
+#sendButton:hover {
+  cursor: pointer;
+  background-color: #a7a2fb;
+  color: white;
+}
+
 h1 {
   margin-left: 300px;
   font-family: "Poppins";
